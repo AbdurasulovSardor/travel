@@ -122,7 +122,8 @@ img {
 }
 
 .main {
-  overflow: hidden; /* For animation ScrollReveal */
+  overflow: hidden;
+  /* For animation ScrollReveal */
 }
 
 /*=============== HEADER & NAV ===============*/
@@ -256,11 +257,9 @@ img {
   left: 0;
   width: 100%;
   height: 800px;
-  background: linear-gradient(
-    180deg,
-    hsla(0, 0%, 0%, 0) 58%,
-    hsla(0, 0%, 0%) 78%
-  );
+  background: linear-gradient(180deg,
+      hsla(0, 0%, 0%, 0) 58%,
+      hsla(0, 0%, 0%) 78%);
 }
 
 .home__container {
@@ -316,11 +315,9 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    180deg,
-    hsla(0, 0%, 0%, 0) 50%,
-    hsla(0, 0%, 0%) 125%
-  );
+  background: linear-gradient(180deg,
+      hsla(0, 0%, 0%, 0) 50%,
+      hsla(0, 0%, 0%) 125%);
 }
 
 .home__card:hover .home__card-img {
@@ -383,11 +380,9 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    180deg,
-    hsla(0, 0%, 0%, 0) 50%,
-    hsla(0, 0%, 0%) 125%
-  );
+  background: linear-gradient(180deg,
+      hsla(0, 0%, 0%, 0) 50%,
+      hsla(0, 0%, 0%) 125%);
 }
 
 .about__image:hover .about__img {
@@ -419,11 +414,9 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    180deg,
-    hsla(0, 0%, 0%, 0) 50%,
-    hsla(0, 0%, 0%) 125%
-  );
+  background: linear-gradient(180deg,
+      hsla(0, 0%, 0%, 0) 50%,
+      hsla(0, 0%, 0%) 125%);
 }
 
 .popular__title {
@@ -454,12 +447,10 @@ img {
   position: relative;
 }
 
-.explore__container {
-}
-
 .explore__image {
   position: absolute;
   overflow: hidden;
+  z-index: -1;
 }
 
 .explore__img {
@@ -475,13 +466,11 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    180deg,
-    hsla(0, 0%, 0%) 5%,
-    hsla(0, 0%, 0%, 0) 40%,
-    hsla(0, 0%, 0%, 0) 60%,
-    hsla(0, 0%, 0%) 92%
-  );
+  background: linear-gradient(180deg,
+      hsla(0, 0%, 0%) 5%,
+      hsla(0, 0%, 0%, 0) 40%,
+      hsla(0, 0%, 0%, 0) 60%,
+      hsla(0, 0%, 0%) 92%);
 }
 
 .explore__content {
@@ -489,15 +478,6 @@ img {
   padding-top: 16rem;
   text-align: center;
   row-gap: 2.5rem;
-}
-
-.explore__data {
-}
-
-.explore__title {
-}
-
-.explore__description {
 }
 
 .explore__user {
@@ -519,50 +499,56 @@ img {
 
 /*=============== JOIN ===============*/
 .join {
+  padding-top: 200px;
 }
+
 .join__container {
   row-gap: 3rem;
   padding-bottom: 2.5rem;
 }
+
 .join__data {
   text-align: center;
 }
-.section__title {
-}
+
 .join__description {
   margin-bottom: 2rem;
 }
+
 .join__form {
   display: grid;
   row-gap: 1rem;
 }
+
 .join__input {
   padding: 1.25rem 1rem;
   background-color: var(--container-color);
 }
+
 .join__button {
   cursor: pointer;
 }
+
 .join__image {
   position: relative;
   justify-self: center;
   overflow: hidden;
 }
+
 .join__img {
   width: 300px;
   transition: transform 0.4s;
 }
+
 .join__shadow {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    180deg,
-    hsla(0, 0%, 0%, 0) 50%,
-    hsla(0, 0%, 0%) 125%
-  );
+  background: linear-gradient(180deg,
+      hsla(0, 0%, 0%, 0) 50%,
+      hsla(0, 0%, 0%) 125%);
 }
 
 .join__image:hover .join__img {
@@ -576,9 +562,6 @@ img {
   background-color: var(--container-color);
 }
 
-.footer__container {
-}
-
 .footer__content {
   row-gap: 3.5rem;
 }
@@ -590,9 +573,6 @@ img {
   font-family: var(--second-font);
   font-weight: var(--font-semi-bold);
   margin-bottom: 1rem;
-}
-
-.footer__description {
 }
 
 .footer__data {
@@ -684,6 +664,7 @@ img {
   z-index: var(--z-tooltip);
   transition: bottom 0.4s, transform 0.4s;
 }
+
 .scrollup:hover {
   transform: translatey(-0.25rem);
 }
@@ -710,6 +691,7 @@ img {
 /* For medium devices */
 
 @media screen and (min-width: 576px) {
+
   .home__container,
   .about__container .explore__container,
   .join__container {
@@ -756,10 +738,12 @@ img {
     grid-template-columns: repeat(2, max-content);
     justify-content: space-between;
   }
+
   .footer__group {
     flex-direction: row;
     justify-content: space-between;
   }
+
   .footer__copy {
     order: -1;
   }
@@ -768,10 +752,12 @@ img {
 /* For large devices */
 
 @media screen and (min-width: 1023px) {
+
   .nav__close,
   .nav__toggle {
     display: none;
   }
+
   .nav__list {
     flex-direction: row;
     column-gap: 4rem;
@@ -799,6 +785,7 @@ img {
   .nav {
     height: calc(var(--header-height) + 1.5rem);
   }
+
   .blur-header::after {
     backdrop-filter: blur(25px);
   }
@@ -809,37 +796,47 @@ img {
     row-gap: 4rem;
     padding-top: 6.5rem;
   }
+
   .home__shadow {
     height: 980px;
   }
+
   .home__data {
     text-align: initial;
     width: 480px;
   }
+
   .home__subtitle {
     font-size: var(--h2-font-size);
   }
+
   .home__description {
     margin-bottom: 2.5rem;
   }
+
   .home__cards {
     grid-template-columns: repeat(4, 260px);
   }
+
   .home__card-title {
     left: 1.5rem;
     bottom: 1.5rem;
   }
+
   .button {
     column-gap: 1.5rem;
   }
+
   .about__container {
     grid-template-columns: 400px 460px;
     column-gap: 8.5rem;
     padding-block: 1rem;
   }
+
   .about__description {
     margin-bottom: 3rem;
   }
+
   .about__img {
     width: 460px;
   }
@@ -849,9 +846,11 @@ img {
     column-gap: 3rem;
     padding-top: 4rem;
   }
+
   .popular__title {
     font-size: var(--h2-font-size);
   }
+
   .popular__location {
     font-size: var(--normal-font-size);
   }
@@ -859,14 +858,17 @@ img {
   .explore__img {
     height: 600px;
   }
+
   .explore__content {
     grid-template-columns: 670px 1fr;
     padding-top: 28px;
   }
+
   .explore__data,
   .explore__data .section__title {
     align-items: initial;
   }
+
   .explore__user {
     justify-content: flex-end;
     align-self: flex-end;
@@ -878,9 +880,11 @@ img {
     column-gap: 8.5rem;
     padding-block: 1rem 5rem;
   }
+
   .join__img {
     width: 460px;
   }
+
   .join__description {
     margin-bottom: 3rem;
   }
@@ -888,15 +892,19 @@ img {
   .footer {
     padding-block: 5rem 3rem;
   }
+
   .footer__title {
     margin-bottom: 1.5rem;
   }
+
   .footer__group {
     margin-top: 7rem;
   }
+
   .footer__social {
     column-gap: 2rem;
   }
+
   .footer__social-link {
     font-size: 1.5rem;
   }
